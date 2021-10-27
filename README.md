@@ -1,12 +1,30 @@
-# Hotel California International
+## Important Setups
+### 0. Install MongoDB on your server
+### 1. Start MongoDB service:
+```
+systemctl mongod
+```
+### 2. Install JS packages and initialize MongoDB
+```
+npm install
+mongo hotel scripts/init.mongo.js
+```
+This will create "hotel" database and tow collections "customer" and "counters" in it.
+> **Note:** this project accesses hotel->customers and hotel->counters in MongoDB. 
 
-Important Setups:
-1. Start mongodb service: <br>
-    systemctl mongod
-2. Run initial mongo script: this will create "hotel" database and tow collections "customer" and "counters" collections in it. <br>
-    mongo hotel scripts/init.mongo.js
-3. Start server: <br>
-    npm start
-4. Always remember this project accesses hotel-customer and hotel-counters in mongodb. 
-5. The Mongdb CRUD test script can be executed by: <br>
-    node scripts/trymongo.js (All information will be printed in console.)  
+### 3. Start the server
+```
+npm start
+```
+
+### 4. Compile JSX file to JS file in *ui* folder in a new shell
+```
+cd ui
+npx babel src --out-dir public
+```
+
+### 5. The MongoDB CRUD test script can be executed by
+```
+node scripts/trymongo.js
+```
+All information will be printed in console.
