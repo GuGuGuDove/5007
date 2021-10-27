@@ -19,7 +19,6 @@ npm start
 
 ### 4. Compile JSX file to JS file in *ui* folder in a new shell
 ```
-cd ui
 npx babel src --out-dir public
 ```
 
