@@ -1,6 +1,6 @@
 ## Important Setups
 ### 0. Install MongoDB on your server
-### 1. Start MongoDB service:
+### 1. Start MongoDB service
 ```
 systemctl mongod
 ```
