@@ -17,7 +17,8 @@ This will create "hotel" database and tow collections "customer" and "counters" 
 npm start
 ```
 
-### 4. Compile JSX file to JS file a new shell
+### 4. Compile JSX file to JS file
+In a new shell:
 ```
 npx babel src --out-dir public
 ```
